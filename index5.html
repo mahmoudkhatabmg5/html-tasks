@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=UTF-8>
+    <title>project2</title>
+    <style>
+        header {
+            display: inline-block;
+            background-color: aqua;
+            width: 100%;
+            height: 60px;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        #first {
+            width: 100%;
+        }
+
+        #exp {
+            width: 600px;
+        }
+
+        #sal {
+            width: 600px;
+        }
+
+        #secl {
+            text-align: left;
+        }
+
+        #secr {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="13.jpg" width="40px" height="40px">
+    </header>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <label> first name</label><br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label> middle name</label><br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label> last name</label><br>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="first"> street</label><br>
+                    <input type="text" id="first">
+                </td>
+                <td>
+                    <label> city</label><br>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="first"> state</label><br>
+                    <input type="text" id="first">
+                </td>
+                <td>
+                    <label> zip code</label><br>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="first"> email</label><br>
+                    <input type="text" id="first">
+                </td>
+                <td>
+                    <label> phone number</label><br>
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+    </center>
+    <hr>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <label for="exp">experience level</label><br>
+                    <input list="experience" id="exp" name="exp" placeholder="please select">
+                    <datalist id="experience">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                    </datalist>
+                </td>
+                <td>
+                    <label for="sal">required salary</label><br>
+                    <input list="salary" id="sal" name="sal" placeholder="please select">
+                    <datalist id="salary">
+                        <option value="10">
+                        <option value="20">
+                        <option value="30">
+                    </datalist>
+                </td>
+
+            </tr>
+        </table>
+    </center>
+    <hr>
+    <center>
+        <section>
+            <div id="secl">
+                
+                
+                <p>position applying to</p>
+                <input type="radio" value="intern">
+                <label>intern</label>
+                <input type="radio" value="product lead">
+                <label>product lead</label><br>
+                <input type="radio" value="sales manager">
+                <label>sales manager</label>
+                <input type="radio" value="developer">
+                <label>developer</label>
+            </div>
+            <div id="secr">
+                <p>how did you here about us</p>
+                <input type="checkbox" value="linkedin">
+                <label>linkedin</label>
+                <input type="checkbox" value="website">
+                <label>website</label><br>
+                <input type="checkbox" value="event">
+                <label>event</label>
+                <input type="checkbox" value="family/friend">
+                <label>family/friend</label><br>
+                <input type="checkbox" value="social media ">
+                <label>social media</label>
+                <input type="checkbox" value="other">
+                <label>other</label>
+
+            </div>
+        </section>
+    </center>
+    <center> <input type="button" value="submit application">
+    </center>
+</body>
+
+</html>
